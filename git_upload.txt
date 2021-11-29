@@ -1,0 +1,17 @@
+#Upload project to github
+touch .gitignore
+git config --global user.name mdsaif0405
+git config1 --global user.email mdsaif0405@gmail.com
+git init 
+git add .
+git commit -m "Initial commit"
+git status #Just to see
+#for private repo
+ssh-keygen -t rsa -b 4096 -C "youremail@mail.com"
+tail <path to id_rsa.pub> #Add this key to your GitHub account
+git remote add origin <ssh url.git>
+#cmd access using token
+git remote set-url origin https://username:token@github.com/username/repo_name.git
+git push origin master
+#if required
+git config --system http.sslcainfo "location : ca-bundle.crt"
