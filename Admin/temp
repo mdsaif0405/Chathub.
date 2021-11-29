@@ -1,0 +1,32 @@
+        <div class="form" style="overflow:auto;">
+            <table class="table table-hover table-striped table-dark">
+                <thead>
+                <th>Admin ID</th>
+                <th>Name</th>
+                <th>Username</th>
+                <th>created on</th>
+                <th>Action</th>
+                </thead>
+
+                <tbody>
+                <?php
+                $data = mysqli_query($conn, "select * from admin");
+                
+                while($array = mysqli_fetch_array($data)){
+                    
+                    // $_SESSION["id"] = $array["unique_id"];
+                    echo '<tr>
+                            <td>'.$array["admin_id"].'</td>
+                            <td>'.$array["fname"].' '.$array["lname"].'</td>
+                            <td>'.$array["username"].'</td>
+                            <td>'.$array["created_at"].'</td>
+                            <td>
+                                <form method="post" action="php/del_admin.php"> 
+                                    <input id="delBtn" type="submit" name="del" value="remove">
+                                    <input type="hidden" name="id" value="'.$array['admin_id'].'">
+                                </form>
+                            </td>
+                          </tr>';
+                }
+                ?>
+        </div>
