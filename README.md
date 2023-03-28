@@ -1,6 +1,6 @@
 # ChatHub: A Chatting Web Application
 
-ChatHub is a feature-rich web application that allows users to communicate with each other in real-time. The application is built using PHP, JavaScript, and AJAX, and includes many useful features such as one-to-one chatting, group chatting, friend lists, and blocking.
+ChatHub is a feature-rich web application that allows users to communicate with each other in real-time. The application is built using PHP, JavaScript, and AJAX, and includes many useful features such as one-to-one chatting, group chatting, friend lists, blocking, managing profile, viewing profile, and password reset.
 
 ## Features
 
@@ -11,8 +11,15 @@ ChatHub is a feature-rich web application that allows users to communicate with 
 -   Friend list: Users can add friends to their list, view their status and initiate a conversation with them.
     
 -   Blocking: Users can block unwanted users and prevent them from messaging them.
+
+-   Manage Profile: Users can edit their profile information such as their name, profile picture, and bio.
     
--   Admin module: The application includes an admin module that allows the admin to manage users, groups, and conversations.
+-   View Profile: Users can view other users' profiles to get more information about them.
+    
+-   Password Reset: Users can reset their password if they forget it.
+    
+-   Admin module: The application includes an admin module that allows the admin to manage users, groups, conversations, and other site settings.
+    
     
 
 ## Getting Started
